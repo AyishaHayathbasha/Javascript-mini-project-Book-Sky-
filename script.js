@@ -34,7 +34,9 @@ addbook.addEventListener("click",function(event){
     div.setAttribute("class","book-box")
     div.innerHTML=`<h2>${booktitle.value}</h2>
         <h5>${bookauthor.value}</h5>
-        <p>${description.value}</p>`
+        <p>${description.value}</p>
+         <button class="btn"  onclick="deletebook(event)">Delete</button>
+`
     box.append(div)
     overlay.style.display="none"
     popup.style.display="none"
